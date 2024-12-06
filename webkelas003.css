@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #f4f4f4;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0;
+}
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1a5bbc;
+    color: #fff;
+}
+header .judul {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+header .deskripsi {
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding-top: 10px;
+}
+.wrap {
+    width: 90%;
+    max-width: 960px;
+    margin: 30px auto;
+}
+nav.menu ul {
+    display: flex;
+    justify-content: center;
+    background-color: #1a5bbc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+nav.menu ul li {
+    list-style: none;
+}
+nav.menu ul a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+nav.menu ul a:hover {
+    background-color: #124694;
+    border-radius: 8px;
+}
+.blog .conteudo {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.blog .conteudo img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.blog .conteudo h1 {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.blog .conteudo p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.post-info {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1a5bbc;
+    color: white;
+    margin-top: 30px;
+    /*border-radius: 10px;*/
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer a.text-red {
+    color: rgb(159, 173, 120);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        width: 100%;
+    }
+
+    nav.menu ul {
+        flex-direction: column;
+    }
+
+    nav.menu ul a {
+        text-align: center;
+    }
+
+    .conteudo img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav.menu ul a {
+        font-size: 16px;
+    }
+
+    .judul {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
